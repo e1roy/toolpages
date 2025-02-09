@@ -11,8 +11,8 @@ import {
 } from "@chakra-ui/react";
 
 function DiffEditor() {
-  const [original, setOriginal] = useState("");
-  const [value, setValue] = useState("");
+  const [original, setOriginal] = useState("text1");
+  const [value, setValue] = useState("text2");
   const [language, setLanguage] = useState("javascript");
   const editorRef = useRef(null);
 
