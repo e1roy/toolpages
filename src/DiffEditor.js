@@ -32,6 +32,8 @@ function DiffEditor() {
     lineNumbers: true,
     wordWrap: "on",
     theme: useColorModeValue("vs", "vs-dark"),
+    renderIndicators: true,
+    renderMarginRevertIcon: true
   };
 
   const languages = [
