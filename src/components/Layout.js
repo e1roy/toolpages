@@ -5,7 +5,7 @@ import { Link, Outlet } from "react-router-dom";
 
 function Layout() {
   const bg = useColorModeValue("gray.50", "gray.400");
-  const triangleBg = useColorModeValue("blue.100", "blue.900");
+  const triangleBg = useColorModeValue("orange.100", "blue.900");
   const buttonColor = useColorModeValue("blue.600", "blue.200");
 
   return (
