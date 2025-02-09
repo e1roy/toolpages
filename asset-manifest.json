@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/toolpages/static/css/main.19452199.css",
+    "main.js": "/toolpages/static/js/main.5695a0fe.js",
+    "index.html": "/toolpages/index.html",
+    "main.19452199.css.map": "/toolpages/static/css/main.19452199.css.map",
+    "main.5695a0fe.js.map": "/toolpages/static/js/main.5695a0fe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19452199.css",
+    "static/js/main.5695a0fe.js"
+  ]
+}
