@@ -1,7 +1,10 @@
 import React from 'react';
+import { ChakraProvider } from '@chakra-ui/react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Home';
-import DiffEditor from './DiffEditor';
+import Diff from './pages/DiffEditor';
+import Time from './pages/TimeCalculator';
+import Layout from './components/Layout';
 import {
   Box,
   Container,
@@ -16,12 +19,17 @@ function App() {
   const color = useColorModeValue('gray.800', 'white');
 
   return (
-    <Router basename="/toolpages">
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/diff" element={<DiffEditor />} />
-      </Routes>
-    </Router>
+    <ChakraProvider>
+      <Router basename="/toolpages">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route element={<Layout />}>
+            <Route path="/diff" element={<Diff />} />
+            <Route path="/time" element={<Time />} />
+          </Route>
+        </Routes>
+      </Router>
+    </ChakraProvider>
   );
 }
 
